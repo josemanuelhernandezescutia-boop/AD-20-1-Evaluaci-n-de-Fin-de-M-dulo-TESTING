@@ -15,3 +15,25 @@ test('subtract 5 - 4 to equal 1', () => {
 test('subtract -5 - -10 to equal 5', () => {
   expect(calculator.subtract(-5, -10)).toBe(5);
 });
+
+//! TAREA 1 
+
+test(`divide 20 / 5 = 4`, () => {
+  expect(calculator.divide(20,5)).toBe(4);
+})
+
+test(`divide 100 / 2 = 50`, () => {
+  expect(calculator.divide(100,2)).toBe(50);
+})
+
+test(`multiply 100 * 2 = 200`, () => {
+  expect(calculator.multiply(100,2)).toBe(200);
+})
+
+test(`multiply 9 * 2 = 18`, () => {
+  expect(calculator.multiply(9,2)).toBe(18);
+})
+
+test(`divide 100 / 0 = undefined`, () => {
+  expect(calculator.divide(100,0)).toBeUndefined();
+})
